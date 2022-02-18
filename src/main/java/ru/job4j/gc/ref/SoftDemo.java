@@ -8,8 +8,7 @@ public class SoftDemo {
 
     public static void main(String[] args) {
         example1();
-        example2();
-
+        /*example2();*/
     }
 
     private static void example1() {
@@ -19,7 +18,7 @@ public class SoftDemo {
         System.out.println(soft.get());
     }
 
-    private static void example2() {
+     /*private static void example2() {
         List<SoftReference<Object>> objects = new ArrayList<>();
         for (int i = 0; i < 100_000_000; i++) {
             objects.add(new SoftReference<Object>(new Object() {
@@ -31,6 +30,7 @@ public class SoftDemo {
                 }
             }));
         }
+
         System.gc();
         int liveObject = 0;
         for (SoftReference<Object> ref : objects) {
@@ -40,7 +40,7 @@ public class SoftDemo {
             }
         }
         System.out.println(liveObject);
-    }
+    }*/
 
     private static void unsafe() {
         List<SoftReference<Object>> someData = new ArrayList<>();
@@ -60,6 +60,7 @@ public class SoftDemo {
         } else {
             System.out.println("null");
         }
+
     }
 
 }

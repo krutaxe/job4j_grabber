@@ -8,7 +8,7 @@ public class StrongDemo {
 
     public static void main(String[] args) throws InterruptedException {
         example1();
-        example2();
+        /*example2();*/
         example3();
     }
 
@@ -39,7 +39,7 @@ public class StrongDemo {
         TimeUnit.SECONDS.sleep(5);
     }
 
-    private static void example2() throws InterruptedException {
+    /*private static void example2() throws InterruptedException {
         Object[] objects = new Object[100];
         for (int i = 0; i < 100; i++) {
             Object object = new Object() {
@@ -57,5 +57,5 @@ public class StrongDemo {
         }
         System.gc();
         TimeUnit.SECONDS.sleep(5);
-    }
+    }*/
 }
