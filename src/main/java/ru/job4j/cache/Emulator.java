@@ -1,5 +1,6 @@
 package ru.job4j.cache;
 
+
 import java.util.Scanner;
 
 public class Emulator {
