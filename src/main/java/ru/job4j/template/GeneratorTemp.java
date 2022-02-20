@@ -1,6 +1,5 @@
 package ru.job4j.template;
 
-
 import java.util.Map;
 
 public class GeneratorTemp implements Generator {
