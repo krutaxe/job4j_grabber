@@ -32,7 +32,7 @@ public class GeneratorTempTest {
 
     @Ignore
     @Test(expected = IllegalArgumentException.class)
-    public void wrongKeys () {
+    public void wrongKeys() {
         Generator generator = new GeneratorTemp();
         Map<String, String> tempMap = Map.of("user", "Hello", "login", "name");
         String template = "${?}, my name is Misha, what is your ${!}? ";
@@ -41,7 +41,7 @@ public class GeneratorTempTest {
 
     @Ignore
     @Test(expected = IllegalArgumentException.class)
-    public void extraKeys () {
+    public void extraKeys() {
         Generator generator = new GeneratorTemp();
         Map<String, String> tempMap = Map.of("?", "Hello", "!", "name", "@", "are");
         String template = "${?}, my name is Misha, what is your ${!}? ";
