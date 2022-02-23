@@ -10,5 +10,6 @@ import java.util.List;
 
 public interface CreateLoadData<T> {
     List<T> create(List<Integer> id, List<String> names, List<Date> date);
+
     void load(List<T> items);
 }

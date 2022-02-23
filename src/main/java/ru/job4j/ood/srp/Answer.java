@@ -7,5 +7,6 @@ package ru.job4j.ood.srp;
 
 public interface Answer {
     String getAnswer(String question);
+
     void print(String answer);
 }

@@ -7,5 +7,6 @@ package ru.job4j.ood.srp;
 
 public interface Editor {
     double calculations(int a, int b, int c);
+
     void writeFile(double number);
 }
