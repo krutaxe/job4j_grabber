@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 public class ReportAccountTest {
 
     @Test
-    public void ReportAccount() {
+    public void reportAccount() {
         MemStore store = new MemStore();
         Calendar now = Calendar.getInstance();
         Employee employee1 = new Employee("Dima", now, now, 900);

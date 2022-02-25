@@ -3,14 +3,13 @@ package ru.job4j.ood.srp;
 import org.junit.Test;
 
 import java.util.Calendar;
-
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.*;
 
 public class ReportHRTest {
 
     @Test
-    public void ReportHR() {
+    public void reportHR() {
         MemStore store = new MemStore();
         Calendar now = Calendar.getInstance();
         Employee employee1 = new Employee("Dima", now, now, 900);
