@@ -2,7 +2,6 @@ package ru.job4j.ood.srp;
 
 import java.util.List;
 import java.util.function.Predicate;
-import java.util.Calendar;
 
 public class ReportEngine implements Report {
 

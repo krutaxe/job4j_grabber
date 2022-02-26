@@ -5,8 +5,6 @@ import ru.job4j.ood.srp.Report;
 import ru.job4j.ood.srp.Store;
 
 import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import javax.xml.bind.JAXBException;
 
 import java.util.List;
 import java.util.function.Predicate;

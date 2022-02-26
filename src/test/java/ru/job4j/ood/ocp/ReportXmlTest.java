@@ -28,8 +28,10 @@ public class ReportXmlTest {
                 .append("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n")
                 .append("<employee>\n")
                 .append("    <name>").append(employee.getName()).append("</name>\n")
-                .append("    <hired>").append("2022-02-26T00:00:00").append("+03:00").append("</hired>\n")
-                .append("    <fired>").append("2022-02-26T00:00:00").append("+03:00").append("</fired>\n")
+                .append("    <hired>").append("2022-02-26T00:00:00")
+                .append("+03:00").append("</hired>\n")
+                .append("    <fired>").append("2022-02-26T00:00:00")
+                .append("+03:00").append("</fired>\n")
                 .append("    <salary>").append(employee.getSalary()).append("</salary>\n")
                 .append("</employee>\n");
         assertEquals(expected.toString(), rsl);
