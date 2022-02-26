@@ -25,13 +25,13 @@ public class ReportAccountTest {
                 .append(employee1.getName()).append(";")
                 .append(employee1.getHired()).append(";")
                 .append(employee1.getFired()).append(";").append("$")
-                .append(employee1.getSalary() * reportAccount.getCoefficient())
+                .append(employee1.getSalary() * ReportAccount.COEFFICIENT)
                 .append("$").append(";")
                 .append(System.lineSeparator())
                 .append(employee2.getName()).append(";")
                 .append(employee2.getHired()).append(";")
                 .append(employee2.getFired()).append(";").append("$")
-                .append(employee2.getSalary() * reportAccount.getCoefficient())
+                .append(employee2.getSalary() * ReportAccount.COEFFICIENT)
                 .append("$").append(";")
                 .append(System.lineSeparator());
         assertThat(engine.generate(em -> true), is(expect.toString()));

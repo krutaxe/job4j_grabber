@@ -6,10 +6,6 @@ public class ReportAccount implements ReportAll {
 
     public static final double COEFFICIENT = 1.7;
 
-    public double getCoefficient() {
-        return COEFFICIENT;
-    }
-
     @Override
     public String report(List<Employee> list) {
         StringBuilder text = new StringBuilder();
