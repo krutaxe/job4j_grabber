@@ -17,7 +17,6 @@ public class ReportXml implements ReportAll {
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
             marshaller.marshal(new Employees(list), writer);
             xml = writer.getBuffer().toString();
-            System.out.println(xml);
         } catch (Exception e) {
             e.printStackTrace();
         }
