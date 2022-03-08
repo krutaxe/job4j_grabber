@@ -82,24 +82,3 @@ public class Food {
         return Objects.hash(name, expiryDate, createDate, price, discount);
     }
 }
-
-class Bread extends Food {
-    public Bread(String name, LocalDate expiryDate, LocalDate createDate,
-                 double price, double discount) {
-        super(name, expiryDate, createDate, price, discount);
-    }
-}
-
-class Cheese extends Food {
-    public Cheese(String name, LocalDate expiryDate, LocalDate createDate,
-                  double price, double discount) {
-        super(name, expiryDate, createDate, price, discount);
-    }
-}
-
-class Lemonade extends Food {
-    public Lemonade(String name, LocalDate expiryDate, LocalDate createDate,
-                    double price, double discount) {
-        super(name, expiryDate, createDate, price, discount);
-    }
-}

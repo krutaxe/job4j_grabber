@@ -1,17 +1,20 @@
 package ru.job4j.ood.lsp;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Context {
-    private Storage storage;
 
-    public Context() {
-    }
+    private List<Storage> storageList = new ArrayList<>();
 
-    public Context(Storage storage) {
-        this.storage = storage;
+    public Context(List<Storage> storageList) {
+        this.storageList = storageList;
     }
 
     public void execute(Food food) {
-        storage.distribution(food);
+        for (Storage s: storageList) {
+            s.distribution(food);
+        }
     }
 
 }
