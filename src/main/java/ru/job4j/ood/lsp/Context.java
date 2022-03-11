@@ -13,7 +13,10 @@ public class Context {
 
     public void execute(Food food) {
         for (Storage s: storageList) {
-            s.distribution(food);
+            if (s.accept(food)) {
+                s.distribution(food);
+                break;
+            }
         }
     }
 

@@ -8,13 +8,15 @@ public class Shop implements Storage {
 
    @Override
    public boolean distribution(Food food) {
+      boolean rsl = false;
       if (accept(food)) {
          if (add(food)) {
             food.setPrice(food.getPrice() - (food.getPrice() * food.getDiscount()));
          }
          listShop.add(food);
+         rsl = true;
       }
-      return false;
+      return rsl;
    }
 
    @Override
