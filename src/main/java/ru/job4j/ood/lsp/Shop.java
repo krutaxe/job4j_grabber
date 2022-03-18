@@ -33,4 +33,8 @@ public class Shop implements Storage {
       return controlFresh(food) > 75;
    }
 
+   @Override
+   public void clearStorage() {
+      listShop.clear();
+   }
 }

@@ -20,4 +20,15 @@ public class Context {
         }
     }
 
+    public void resort() {
+        List<Food> foodList = new ArrayList<>();
+        for (Storage s: storageList) {
+            foodList.addAll(s.getStorage());
+            s.clearStorage();
+        }
+
+        for (Food food: foodList) {
+            execute(food);
+        }
+    }
 }

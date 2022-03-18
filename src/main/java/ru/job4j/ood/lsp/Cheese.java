@@ -7,4 +7,5 @@ class Cheese extends Food {
                   double price, double discount) {
         super(name, expiryDate, createDate, price, discount);
     }
+
 }

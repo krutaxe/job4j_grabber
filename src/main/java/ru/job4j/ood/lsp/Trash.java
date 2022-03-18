@@ -25,4 +25,9 @@ public class Trash implements Storage {
     public boolean accept(Food food) {
         return controlFresh(food) >= 100;
     }
+
+    @Override
+    public void clearStorage() {
+        listTrash.clear();
+    }
 }

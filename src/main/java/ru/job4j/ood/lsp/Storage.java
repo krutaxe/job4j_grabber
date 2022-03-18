@@ -15,4 +15,6 @@ public interface Storage {
     List<Food> getStorage();
 
     boolean accept(Food food);
+
+    void clearStorage();
 }

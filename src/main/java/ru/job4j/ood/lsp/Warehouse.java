@@ -25,4 +25,9 @@ public class Warehouse implements Storage {
     public boolean accept(Food food) {
         return controlFresh(food) < 25;
     }
+
+    @Override
+    public void clearStorage() {
+        listWarehouse.clear();
+    }
 }
