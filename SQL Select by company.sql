@@ -51,10 +51,10 @@ where c.id != 5;
 2. Необходимо выбрать название компании с максимальным количеством человек + количество человек в этой компании
 (нужно учесть, что таких компаний может быть несколько).
 
-select c.name, count(p.company_id)
-from company as c
-join person as p
-on p.company_id = c.id
+select c.name, count(*) from company c
+join person p on p.company_id = c.id
 group by c.name
-order by 2 desc
-limit 1;
+having count(*) = (select count(*) from company c
+join person p on p.company_id = c.id
+group by c.name
+order by count(*) desc limit 1);
