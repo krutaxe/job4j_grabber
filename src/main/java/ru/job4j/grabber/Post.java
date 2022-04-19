@@ -29,4 +29,15 @@ public class Post {
     public int hashCode() {
         return Objects.hash(id, title, link, description);
     }
+
+    @Override
+    public String toString() {
+        return "Post{"
+                + "id=" + id
+                + ", title='" + title + '\''
+                + ", link='" + link + '\''
+                + ", description='" + description + '\''
+                + ", dateTime=" + dateTime
+                + '}';
+    }
 }
