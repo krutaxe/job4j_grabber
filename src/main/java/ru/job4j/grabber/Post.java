@@ -8,7 +8,7 @@ public class Post {
     private String title;
     private String link;
     private String description;
-    private LocalDateTime dateTime;
+    private LocalDateTime created;
 
     @Override
     public boolean equals(Object o) {
@@ -37,7 +37,7 @@ public class Post {
                 + ", title='" + title + '\''
                 + ", link='" + link + '\''
                 + ", description='" + description + '\''
-                + ", dateTime=" + dateTime
+                + ", dateTime=" + created
                 + '}';
     }
 }
