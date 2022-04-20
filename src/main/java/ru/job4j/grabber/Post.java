@@ -87,9 +87,12 @@ public class Post {
         return "Post{"
                 + "id=" + id
                 + ", title='" + title + '\''
-                + ", link='" + link + '\''
-                + ", description='" + description + '\''
-                + ", dateTime=" + created
-                + '}';
+                + ", link='" + link + '\'' + ", "
+                + "\n"
+                + "description='" + description + '\'' + ", "
+                + "\n"
+                + "dateTime=" + created
+                + '}'
+                + "\n\n";
     }
 }
