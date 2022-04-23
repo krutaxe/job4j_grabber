@@ -49,33 +49,31 @@ public class HabrCareerParse implements Parse {
     @Override
     public List<Post> list(String link) {
         List<Post> postList = new ArrayList<>();
-        Connection connection = Jsoup.connect(PAGE_LINK);
-        try {
-            Document document = connection.get();
-            Elements rows = document.select(TITLE);
-            rows.forEach(row -> {
-                Element element = row.select(VACANCY).first();
-                String vacLink = retrieveLink(element);
-                String desc = retrieveDescription(vacLink);
-                String vacTitle = vacancyTitle(element);
-                Element dateElement = row.select(".vacancy-card__date").first().child(0);
-                String dateAttribute = dateElement.attr("datetime");
-                LocalDateTime dateTime = dateTimeParser.parse(dateAttribute);
-                postList.add(new Post(vacTitle, vacLink, desc, dateTime));
-            });
-        } catch (IOException e) {
-            e.printStackTrace();
+        for (int i = 1; i < 6; i++) {
+            Connection connection = Jsoup.connect(PAGE_LINK + i);
+            try {
+                Document document = connection.get();
+                Elements rows = document.select(TITLE);
+                rows.forEach(row -> {
+                    Element element = row.select(VACANCY).first();
+                    String vacLink = retrieveLink(element);
+                    String desc = retrieveDescription(vacLink);
+                    String vacTitle = vacancyTitle(element);
+                    Element dateElement = row.select(".vacancy-card__date").first().child(0);
+                    String dateAttribute = dateElement.attr("datetime");
+                    LocalDateTime dateTime = dateTimeParser.parse(dateAttribute);
+                    postList.add(new Post(vacTitle, vacLink, desc, dateTime));
+                });
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
         return postList;
     }
 
     public static void main(String[] args) throws IOException {
         HabrCareerParse habrCareerParse = new HabrCareerParse(new HarbCareerDateTimeParser());
-
-        List<Post> postList = new ArrayList<>();
-        for (int i = 1; i < 6; i++) {
-            postList.addAll(habrCareerParse.list(PAGE_LINK + i));
-        }
+        List<Post> postList = habrCareerParse.list(PAGE_LINK);
         System.out.println(postList);
 
     }
