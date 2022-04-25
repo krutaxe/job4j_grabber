@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class HarbCareerDateTimeParser implements DateTimeParser {
+public class HabrCareerDateTimeParser implements DateTimeParser {
     @Override
     public LocalDateTime parse(String parse) {
         return ZonedDateTime.parse(parse).toLocalDateTime();

@@ -1,7 +1,5 @@
 package ru.job4j.grabber;
 
-import ru.job4j.grabber.utils.HarbCareerDateTimeParser;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.*;
