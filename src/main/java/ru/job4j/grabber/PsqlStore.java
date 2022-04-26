@@ -53,12 +53,18 @@ public class PsqlStore implements Store, AutoCloseable {
         Timestamp created = Timestamp.valueOf(post.getCreated());
         try (PreparedStatement statement = cnn.prepareStatement(
                 "insert into post (name, text, link, created)"
-                        + "values (?, ?, ?, ?)")) {
+                        + "values (?, ?, ?, ?)",
+                Statement.RETURN_GENERATED_KEYS)) {
                 statement.setString(1, post.getTitle());
                 statement.setString(2, post.getDescription());
                 statement.setString(3, post.getLink());
                 statement.setTimestamp(4, created);
                 statement.execute();
+                try (ResultSet resultSet = statement.getGeneratedKeys()) {
+                    if (resultSet.next()) {
+                        post.setId(resultSet.getInt(1));
+                    }
+                }
         } catch (SQLException e) {
             e.printStackTrace();
         }
