@@ -5,6 +5,6 @@ public class CarPass implements Transport {
 
     @Override
     public int getSize() {
-        return 0;
+        return SIZE;
     }
 }

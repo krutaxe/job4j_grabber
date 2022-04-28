@@ -1,20 +1,21 @@
 package ru.job4j.ood.lsp;
 
-import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
 public class ParkTest {
 
-    @Test @Ignore
+    @Test
     public void whenParkCarTrue() {
-        Parking parking = new Park(1, 2);
+        Parking parking = new Park(0, 2);
+        Transport carPass1 = new CarPass();
         Transport carPass = new CarPass();
+        parking.park(carPass1);
         assertTrue(parking.park(carPass));
     }
 
-    @Test @Ignore
+    @Test
     public void whenParkTruckTrue() {
         Parking parking = new Park(1, 3);
         Transport truck1 = new Truck(5);
@@ -23,7 +24,7 @@ public class ParkTest {
         assertTrue(parking.park(truck2));
     }
 
-    @Test @Ignore
+    @Test
     public void whenParkCarFalse() {
         Parking parking = new Park(2, 1);
         Transport carPass1 = new CarPass();
@@ -32,7 +33,7 @@ public class ParkTest {
         assertFalse(parking.park(carPass2));
     }
 
-    @Test @Ignore
+    @Test
     public void whenParkTruckFalse() {
         Parking parking = new Park(0, 3);
         Transport truck = new Truck(5);
