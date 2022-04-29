@@ -8,7 +8,7 @@ public class Park  implements Parking {
     private  int carPassPlace;
     private  List<Transport> transportList = new ArrayList<>(truckPlace + carPassPlace);
 
-    public Park(int truckPlace, int carPassPlace, List<Transport> transportList) {
+    public Park(int truckPlace, int carPassPlace) {
         this.truckPlace = truckPlace;
         this.carPassPlace = carPassPlace;
         this.transportList = new ArrayList<>(truckPlace + carPassPlace);
