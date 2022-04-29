@@ -6,7 +6,7 @@ import java.util.List;
 public class Park  implements Parking {
     private  int truckPlace;
     private  int carPassPlace;
-    private  List<Transport> transportList = new ArrayList<>(truckPlace + carPassPlace);
+    private  List<Transport> transportList;
 
     public Park(int truckPlace, int carPassPlace) {
         this.truckPlace = truckPlace;
