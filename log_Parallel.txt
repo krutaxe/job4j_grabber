@@ -1,0 +1,43 @@
+
+
+[0.035s][info][gc] Using Parallel
+[0.111s][info][gc] GC(0) Pause Young (Allocation Failure) 2M->1M(11M) 1.238ms
+[3.214s][info][gc] GC(1) Pause Young (Allocation Failure) 4M->3M(11M) 1.792ms
+[3.257s][info][gc] GC(2) Pause Young (Allocation Failure) 6M->3M(11M) 1.081ms
+[3.303s][info][gc] GC(3) Pause Young (Allocation Failure) 6M->4M(11M) 1.710ms
+[3.325s][info][gc] GC(4) Pause Young (Allocation Failure) 7M->4M(11M) 1.269ms
+[3.480s][info][gc] GC(5) Pause Young (Allocation Failure) 7M->5M(10M) 2.276ms
+[3.581s][info][gc] GC(6) Pause Young (Allocation Failure) 7M->6M(11M) 1.756ms
+[3.636s][info][gc] GC(7) Pause Young (Allocation Failure) 8M->6M(11M) 1.658ms
+[5.668s][info][gc] GC(8) Pause Young (Allocation Failure) 8M->6M(11M) 1.248ms
+[10.135s][info][gc] GC(9) Pause Young (Allocation Failure) 8M->7M(11M) 1.426ms
+[10.146s][info][gc] GC(10) Pause Full (Ergonomics) 7M->6M(11M) 10.835ms
+[10.167s][info][gc] GC(11) Pause Full (Ergonomics) 8M->6M(11M) 11.971ms
+[10.180s][info][gc] GC(12) Pause Full (Ergonomics) 8M->6M(11M) 8.341ms
+[10.189s][info][gc] GC(13) Pause Full (Ergonomics) 8M->6M(11M) 6.655ms
+[10.198s][info][gc] GC(14) Pause Full (Ergonomics) 8M->6M(11M) 6.788ms
+[10.207s][info][gc] GC(15) Pause Full (Ergonomics) 8M->6M(11M) 6.360ms
+[10.215s][info][gc] GC(16) Pause Full (Ergonomics) 8M->6M(11M) 6.266ms
+[10.224s][info][gc] GC(17) Pause Full (Ergonomics) 8M->6M(11M) 6.243ms
+[10.232s][info][gc] GC(18) Pause Full (Ergonomics) 8M->6M(11M) 6.598ms
+[10.241s][info][gc] GC(19) Pause Full (Ergonomics) 8M->6M(11M) 6.380ms
+[10.249s][info][gc] GC(20) Pause Full (Ergonomics) 8M->6M(11M) 6.389ms
+[10.258s][info][gc] GC(21) Pause Full (Ergonomics) 8M->6M(11M) 6.372ms
+[10.266s][info][gc] GC(22) Pause Full (Ergonomics) 8M->6M(11M) 6.305ms
+[10.275s][info][gc] GC(23) Pause Full (Ergonomics) 8M->6M(11M) 6.564ms
+[17.682s][info][gc] GC(24) Pause Full (Ergonomics) 8M->4M(11M) 7.820ms
+[25.680s][info][gc] GC(25) Pause Young (Allocation Failure) 6M->5M(11M) 0.330ms
+[35.102s][info][gc] GC(26) Pause Young (Allocation Failure) 6M->5M(11M) 0.312ms
+[44.673s][info][gc] GC(27) Pause Young (Allocation Failure) 7M->6M(11M) 0.346ms
+[61.699s][info][gc] GC(28) Pause Young (Allocation Failure) 8M->6M(11M) 0.321ms
+[61.710s][info][gc] GC(29) Pause Full (Ergonomics) 6M->5M(11M) 10.771ms
+[74.706s][info][gc] GC(30) Pause Young (Allocation Failure) 7M->6M(11M) 0.391ms
+[92.689s][info][gc] GC(31) Pause Young (Allocation Failure) 8M->6M(11M) 0.396ms
+[92.697s][info][gc] GC(32) Pause Full (Ergonomics) 6M->5M(11M) 8.764ms
+[105.725s][info][gc] GC(33) Pause Young (Allocation Failure) 7M->6M(11M) 0.380ms
+[123.735s][info][gc] GC(34) Pause Young (Allocation Failure) 8M->6M(11M) 0.397ms
+
+
+Сортировка слиянием 144 ms
+Сортировка вставкой 4815 ms
+Сортировка пузырьком 89912 ms
