@@ -1,5 +1,4 @@
 package ru.job4j.gc.leak;
-
 public class User {
     private String name;
 
