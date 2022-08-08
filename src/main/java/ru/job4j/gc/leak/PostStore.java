@@ -1,5 +1,4 @@
 package ru.job4j.gc.leak;
-
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
