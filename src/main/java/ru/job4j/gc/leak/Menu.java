@@ -1,4 +1,5 @@
 package ru.job4j.gc.leak;
+
 import java.util.Random;
 import java.util.Scanner;
 

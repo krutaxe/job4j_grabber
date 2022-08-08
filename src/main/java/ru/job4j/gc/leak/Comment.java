@@ -1,4 +1,5 @@
 package ru.job4j.gc.leak;
+
 public class Comment {
     private String text;
     private User user;
