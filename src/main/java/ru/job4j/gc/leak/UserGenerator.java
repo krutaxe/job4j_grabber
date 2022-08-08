@@ -1,6 +1,5 @@
 package ru.job4j.gc.leak;
 
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -15,9 +14,9 @@ public class UserGenerator implements Generate {
     public static final String SEPARATOR = " ";
     public static final Integer NEW_USERS = 1000;
 
-    private static List<String> names;
-    private static List<String> surnames;
-    private static List<String> patrons;
+    public static List<String> names;
+    public static List<String> surnames;
+    public static List<String> patrons;
     private static List<User> users = new ArrayList<>();
     private Random random;
 

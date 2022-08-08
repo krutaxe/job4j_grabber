@@ -1,5 +1,4 @@
 package ru.job4j.gc.leak;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +12,7 @@ public class CommentGenerator implements Generate {
 
     private static List<Comment> comments = new ArrayList<>();
 
-    private static final Integer COUNT = 50;
+    public static final Integer COUNT = 50;
 
     private static List<String> phrases;
 
