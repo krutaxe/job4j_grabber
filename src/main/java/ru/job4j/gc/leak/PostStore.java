@@ -6,10 +6,10 @@ public class PostStore {
 
     private static Map<Integer, Post> posts = new HashMap<>();
 
-    public AtomicInteger atomicInteger = new AtomicInteger(1);
+    private AtomicInteger atomicInteger = new AtomicInteger(1);
 
     public Post add(Post post) {
-        Integer id = atomicInteger.getAndIncrement();
+        int id = atomicInteger.getAndIncrement();
         post.setId(id);
         posts.put(id, post);
         return post;
