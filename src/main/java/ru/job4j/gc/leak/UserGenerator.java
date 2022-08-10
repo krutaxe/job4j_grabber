@@ -13,7 +13,7 @@ public class UserGenerator implements Generate {
 
     public static final String SEPARATOR = " ";
     public static final int NEW_USERS = 1000;
-    private static List<User> users = new ArrayList<>();
+    private List<User> users = new ArrayList<>();
 
     private List<String> names;
     private List<String> surnames;
@@ -54,7 +54,7 @@ public class UserGenerator implements Generate {
         return users.get(random.nextInt(users.size()));
     }
 
-    public static List<User> getUsers() {
+    public List<User> getUsers() {
         return users;
     }
 }
